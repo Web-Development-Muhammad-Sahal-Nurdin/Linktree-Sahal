@@ -1,0 +1,105 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url("ombak.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    width: 30em;
+    margin: 4em;
+}
+
+/* Glassmorphsim */
+/* .Head-Section {
+    background:rgba( 255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+} */
+
+.Head-Section img {
+    display: block;
+    margin: 0 auto;
+    height: 15rem;
+    width: 15rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.Head-Section p {
+    text-align: center;
+    margin-top: 2px;
+    font-size: 1.2rem;
+    color: #ffff;
+}
+
+.Social-Links ul li {
+    width: 100%;
+    margin: 1.2rem 0;
+    padding: 0.4rem 0.8rem;
+    background: rgba( 255, 255, 255, 0.1);
+    backdrop-filter: blur (0px);
+    border-radius: 5px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    box-shadow: 0 0 0.8rem rgba (255, 255, 255, .12);
+}
+
+
+.js-tilt-glare {
+    border-radius: 5px;
+}
+
+.Social-Links ul li a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #ffff;
+    font-size: 1rem;
+}
+
+.Social-Links ul li a .github-logo {
+    text-align: center;
+    line-height: 4rem;
+    padding: 10px 20px;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 12px rgba(0, 0 , 0, 0.5);
+    transform: scale(1.4) translateZ(50px);
+    transition: 0.25s;
+}
+
+.Social-Links ul li a span {
+    line-height: 1.5rem;
+}
+
+.Social-Links ul .github:hover{
+    background: #270082;
+
+}
+
+.github-logo {
+    font-size: 64px;
+}
+
+@media only screen and (max-width: 549px) {
+    .container {
+        width: 88vw;
+    }
+}
